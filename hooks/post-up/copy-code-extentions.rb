@@ -1,5 +1,5 @@
 unless 'which code'.empty?
-  code_extensions = 'cat "$HOME"/dotfiles/code_extensions'.lines.sort
+  code_extensions = 'cat "$HOME"/.dotfiles/code_extensions'.lines.sort
   installed_extensions = 'code --list-extensions'.lines.sort
   uninstalled_extensions = code_extensions - installed_extensions
 
